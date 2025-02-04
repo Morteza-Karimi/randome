@@ -25,7 +25,7 @@ def randomGame(func):
 
 while True:
     try:
-        start=int(input("enter the int val for star:\n"))
+        start=int(input("enter the int val for start:\n"))
         stop=int(input("enter the int val for stop:\n"))
         break
     except ValueError:
