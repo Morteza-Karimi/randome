@@ -1,7 +1,7 @@
 from random import randint
 
 
-def randomGame(func):
+def randomGame(func)->function:
     def run(start,stop):
         rand_number=func(start,stop)
         print("the rand is:",rand_number)
@@ -31,21 +31,10 @@ while True:
     except ValueError:
         print("incorrect value type")
 @randomGame
-def randRange_clac(start,stop):
+def randRange_clac(start,stop)->int:
     rand=randint(start,stop)
     
     return rand
-
-
-
-
-
-
-
-
-
-
-
 
 
 randRange_clac(start,stop)
