@@ -34,7 +34,7 @@ class PlayGame:
                 self.guess_obj.set_guess(guess)
             except ValueError:
                 print("Invalid data type, please enter an integer.")
-                continue  # Continue to the next iteration to ask for a guess again
+                continue  
 
             if self.random_gen.generate1() == self.guess_obj.return_guess():
                 print("Perfect!")
@@ -49,7 +49,7 @@ while True:
     try:
         start = int(input("Enter the start:\n"))
         stop = int(input("Enter the stop:\n"))
-        if start < stop:  # Ensure start is less than stop
+        if start < stop:  
             break
         else:
             print("Start must be less than stop.")
